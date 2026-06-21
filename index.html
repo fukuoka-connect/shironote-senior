@@ -35,10 +35,11 @@ ul{list-style:none}
 }
 
 /* ============ BASE（シニア配慮：大きめ・行間ゆったり）============ */
-body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.9;font-weight:400;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.95;font-weight:400;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden;word-break:auto-phrase;line-break:strict;overflow-wrap:break-word}
 .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
 .sm{font-size:0.82em}
-h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.55;letter-spacing:.01em}
+.nb{display:inline-block}  /* 文節チャンク：句の途中で折り返さない（Safari含む） */
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.5;letter-spacing:.01em;word-break:auto-phrase;line-break:strict}
 .section{padding:clamp(58px,8vw,104px) 0;position:relative}
 .eyebrow{display:inline-flex;align-items:center;gap:.6em;font-family:var(--serif);font-weight:700;color:var(--blue);font-size:1rem;letter-spacing:.06em}
 .eyebrow::before{content:"";width:30px;height:2px;border-radius:2px;background:var(--gold)}
@@ -232,6 +233,12 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.55;letter-spa
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 .flag{position:fixed;left:14px;bottom:14px;z-index:99;background:var(--gold);color:#fff;font-size:.74rem;font-weight:700;padding:.55em 1em;border-radius:99px;box-shadow:var(--shadow-soft)}
 
+/* モバイル可読性：本文の行間・段落間をゆったり（モバイルファースト） */
+.lead,.profile p,.review .rb,.faq-a p,.myway p,.closing p,.worry p,.sec-head p{line-height:2.05}
+.lead.lead2{margin-top:-.7em}
+.profile p{margin-bottom:1.45em}
+.faq-a p{padding-bottom:1.5em}
+
 /* ============ RESPONSIVE ============ */
 @media(min-width:820px){
   .phero-grid{grid-template-columns:1.05fr .95fr}
@@ -265,8 +272,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.55;letter-spa
     <div class="phero-copy">
       <span class="eyebrow">宇美町・粕屋の出張整体 しろのて</span>
       <h1>こんにちは、<br><span class="nm">白垣</span>です。</h1>
-      <p class="hello-sub">あなたの家まで、僕が伺います。</p>
-      <p class="lead">肩・腰・膝のお悩み、「もう何年も…」という方へ。通わなくて大丈夫です。<b>住み慣れたお部屋で、僕がていねいに整えます。</b>受けたあとは、そのままおやすみください。</p>
+      <p class="hello-sub"><span class="nb">あなたの家まで、</span><span class="nb">僕が伺います。</span></p>
+      <p class="lead"><span class="nb">肩・腰・膝のお悩み、</span><span class="nb">「もう何年も…」という方へ。</span><span class="nb">通わなくて大丈夫です。</span></p>
+      <p class="lead lead2"><span class="nb"><b>住み慣れたお部屋で、</b></span><span class="nb"><b>僕がていねいに整えます。</b></span><span class="nb">受けたあとは、</span><span class="nb">そのままおやすみください。</span></p>
       <div class="proof">
         <div class="p"><b>9<span class="u">年</span></b><span>施術歴</span></div>
         <div class="p"><b>90<span class="u">%↑</span></b><span>リピート率</span></div>
