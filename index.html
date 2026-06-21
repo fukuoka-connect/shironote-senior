@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【Aモック・人ベース】出張整体しろのて｜白垣誠弥が、あなたの家へ｜宇美町・粕屋</title>
+<meta name="robots" content="noindex">
+<!-- ※ 役割＝紹介/Instagram/家族の温かい流入を信頼と継続に変える転換装置。SEOではなくシェア最適化＋GA4は後工程 -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============ RESET ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+
+/* ============ TOKENS（まるゴシック × 生成り×墨紺×青／金茶）============ */
+:root{
+  --cream:#FAF7F1;--cream-2:#F3EEE3;--cream-3:#ECE4D4;
+  --ink:#21303F;--ink-soft:#5B6672;
+  --blue:#2F6E9B;--blue-deep:#235A82;--sky:#5FA8D3;
+  --gold:#B08D4F;--gold-soft:#CBB488;
+  --line:rgba(33,48,63,.14);--line-soft:rgba(33,48,63,.08);
+  --shadow:0 24px 60px -30px rgba(33,48,63,.42);
+  --shadow-soft:0 14px 38px -24px rgba(33,48,63,.38);
+  --maxw:1120px;--pad:clamp(20px,5vw,60px);
+  --serif:"Zen Maru Gothic",sans-serif;--sans:"M PLUS Rounded 1c",sans-serif;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+}
+
+/* ============ BASE（シニア配慮：大きめ・行間ゆったり）============ */
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);font-size:17px;line-height:1.9;font-weight:400;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+.sm{font-size:0.82em}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.55;letter-spacing:.01em}
+.section{padding:clamp(58px,8vw,104px) 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:.6em;font-family:var(--serif);font-weight:700;color:var(--blue);font-size:1rem;letter-spacing:.06em}
+.eyebrow::before{content:"";width:30px;height:2px;border-radius:2px;background:var(--gold)}
+.sec-head{text-align:center;max-width:42em;margin:0 auto clamp(34px,5vw,54px)}
+.sec-head .eyebrow{justify-content:center}
+.sec-head h2{font-size:clamp(1.7rem,4.2vw,2.5rem);margin:.35em 0 .3em;color:var(--ink)}
+.sec-head p{color:var(--ink-soft);font-size:1.02rem;line-height:1.95}
+
+/* ============ BUTTONS（しっとり：ON .2s / OFF .45s）============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;padding:1.05em 1.9em;border-radius:14px;font-family:var(--sans);font-weight:700;font-size:1.05rem;letter-spacing:.03em;line-height:1.3;text-align:center;transition:transform .45s var(--ease),box-shadow .45s var(--ease),background .45s var(--ease)}
+.btn:hover{transition-duration:.2s;transform:translateY(-3px)}
+.btn .ico{width:1.2em;height:1.2em;flex:none}
+.btn-tel{background:var(--blue);color:#fff;box-shadow:0 16px 34px -18px rgba(47,110,155,.7);flex-direction:column;gap:.15em;padding:.85em 1.9em}
+.btn-tel .lbl{font-size:.82rem;font-weight:500;letter-spacing:.04em;opacity:.92}
+.btn-tel .num{font-family:var(--serif);font-size:1.5rem;font-weight:900;letter-spacing:.03em}
+.btn-tel:hover{box-shadow:0 22px 44px -18px rgba(47,110,155,.8)}
+.btn-line{background:#06C755;color:#fff;box-shadow:0 14px 32px -18px rgba(6,199,85,.6)}
+.btn-ghost{border:2px solid var(--blue);color:var(--blue)}
+.btn-ghost:hover{background:var(--blue);color:#fff}
+
+/* ============ 告知バー / HEADER ============ */
+.topbar{background:var(--ink);color:var(--cream);text-align:center;padding:.7em 1em;font-size:.95rem;letter-spacing:.02em}
+.topbar b{color:var(--gold-soft);font-family:var(--serif);font-weight:700}
+.topbar .tel{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.45)}
+.site-header{position:sticky;top:0;z-index:40;background:rgba(250,247,241,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.header-in{display:flex;align-items:center;justify-content:space-between;padding-block:.85rem;gap:1em}
+.brand .logo{font-family:var(--serif);font-weight:900;font-size:1.4rem;letter-spacing:.08em;color:var(--ink)}
+.brand .logo small{display:block;font-size:.5em;letter-spacing:.3em;color:var(--blue);font-weight:700;margin-top:.2em}
+.header-cta{display:flex;align-items:center;gap:.8em}
+.header-tel{text-align:right;line-height:1.2}
+.header-tel .lbl{font-size:.7rem;color:var(--ink-soft)}
+.header-tel .num{font-family:var(--serif);font-size:1.35rem;font-weight:900;color:var(--blue)}
+.header-cta .btn-line{padding:.7em 1.25em;font-size:.92rem}
+@media(max-width:720px){.header-tel{display:none}}
+
+/* ============ FV：人ヒーロー（写真ドーン）============ */
+.phero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--cream),var(--cream-2))}
+.phero-blob{position:absolute;width:62vw;max-width:720px;height:62vw;max-height:720px;border-radius:48% 52% 56% 44%/52% 46% 54% 48%;background:radial-gradient(circle at 45% 40%,rgba(95,168,211,.22),rgba(95,168,211,0) 70%);top:-14%;left:-16%;z-index:0}
+.phero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr;gap:clamp(28px,4vw,48px);align-items:center;padding-block:clamp(34px,5vw,64px)}
+.phero-copy .eyebrow{margin-bottom:.4em}
+.phero h1{font-size:clamp(2.4rem,6.4vw,4rem);color:var(--ink);line-height:1.35;margin-bottom:.25em}
+.phero h1 .nm{color:var(--blue)}
+.phero .hello-sub{font-family:var(--serif);font-weight:700;font-size:clamp(1.2rem,3vw,1.7rem);color:var(--ink);margin-bottom:.9em}
+.phero .lead{color:var(--ink-soft);font-size:1.08rem;line-height:2;max-width:30em;margin-bottom:1.6em}
+.phero .lead b{color:var(--ink);font-weight:700}
+.proof{display:flex;flex-wrap:wrap;gap:1.2em 1.6em;margin-bottom:1.8em}
+.proof .p{display:flex;flex-direction:column;line-height:1.2}
+.proof .p b{font-family:var(--serif);font-size:1.8rem;font-weight:900;color:var(--blue)}
+.proof .p span{font-size:.84rem;color:var(--ink-soft);margin-top:.1em}
+.proof .p .u{font-size:.6em;font-weight:700;margin-left:.05em}
+.cta-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,2.6vw,24px);box-shadow:var(--shadow-soft);max-width:520px}
+.cta-box .head{display:flex;align-items:baseline;gap:.5em;flex-wrap:wrap;margin-bottom:.2em}
+.cta-box .head .ttl{font-family:var(--serif);font-weight:700;font-size:1.1rem}
+.cta-box .head .limit{font-size:.76rem;color:#fff;background:var(--gold);padding:.2em .7em;border-radius:99px;font-weight:700}
+.cta-box .price{display:flex;align-items:baseline;gap:.4em;margin:.1em 0 .8em}
+.cta-box .price .was{color:var(--ink-soft);text-decoration:line-through;font-size:.95rem}
+.cta-box .price .now{font-family:var(--serif);font-weight:900;font-size:2.4rem;color:var(--blue);line-height:1}
+.cta-box .price .now .yen{font-size:.45em;margin-right:.1em}
+.cta-box .price .min{font-size:.88rem;color:var(--ink-soft)}
+.cta-actions{display:flex;gap:.7em;flex-wrap:wrap}
+.cta-actions .btn{flex:1;min-width:170px}
+/* 写真 */
+.phero-media{position:relative;max-width:460px;margin-inline:auto;width:100%}
+.phero-media .frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/3.5;border:6px solid #fff}
+.phero-media img{width:100%;height:100%;object-fit:cover}
+.phero-media .ribbon{position:absolute;left:-10px;bottom:24px;background:#fff;border-radius:14px;padding:.7em 1.1em;box-shadow:var(--shadow-soft);border-left:4px solid var(--gold)}
+.phero-media .ribbon .k{font-family:var(--serif);color:var(--blue);font-size:.78rem;font-weight:700}
+.phero-media .ribbon .t{font-family:var(--serif);font-weight:900;font-size:1.45rem;color:var(--ink)}
+.phero-media .ph-note{position:absolute;top:10px;right:10px;background:rgba(176,141,79,.92);color:#fff;font-size:.68rem;font-weight:700;padding:.3em .7em;border-radius:8px}
+
+/* ============ プロフィール＋信念 ============ */
+.profile{background:var(--cream)}
+.profile .inner{max-width:780px;margin:0 auto}
+.profile h2{font-size:clamp(1.6rem,4vw,2.3rem);text-align:center;margin-bottom:.1em}
+.profile .sig-name{text-align:center;color:var(--ink-soft);margin-bottom:clamp(26px,4vw,40px)}
+.profile p{font-size:1.08rem;line-height:2.05;margin-bottom:1.2em;color:var(--ink)}
+.profile p .mk{font-weight:700;background:linear-gradient(transparent 60%,var(--cream-3) 60%)}
+.creed{margin:1.8em 0 0;display:grid;gap:1em;background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(22px,3vw,30px)}
+.creed .ct{font-family:var(--serif);font-weight:700;color:var(--blue);text-align:center;margin-bottom:.2em}
+.creed li{display:flex;gap:.8em;align-items:flex-start;font-size:1.02rem;line-height:1.8}
+.creed li .ic{flex:none;width:28px;height:28px;border-radius:50%;background:var(--cream-3);color:var(--gold);display:grid;place-content:center;font-weight:900;font-family:var(--serif);margin-top:.05em}
+.profile .ph-note{margin-top:1.4em;text-align:center;font-size:.84rem;color:var(--gold);border:1px dashed var(--gold-soft);border-radius:10px;padding:.7em}
+
+/* ============ お悩み ============ */
+.worries{background:var(--cream-2)}
+.worry-grid{display:grid;grid-template-columns:1fr;gap:14px;max-width:760px;margin:0 auto clamp(32px,4vw,48px)}
+.worry{display:flex;gap:.9em;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.1em 1.3em}
+.worry .ck{flex:none;width:30px;height:30px;border-radius:50%;background:var(--cream-3);color:var(--gold);display:grid;place-content:center;font-family:var(--serif);font-weight:900;margin-top:.1em}
+.worry p{font-size:1.04rem;line-height:1.7}
+.myway{max-width:820px;margin:0 auto;background:var(--ink);color:var(--cream);border-radius:20px;padding:clamp(26px,4vw,40px);text-align:center}
+.myway .mt{font-family:var(--serif);color:var(--gold-soft);font-weight:700;margin-bottom:.5em}
+.myway h3{color:#fff;font-size:clamp(1.3rem,3.2vw,1.9rem);line-height:1.6;margin-bottom:.7em}
+.myway h3 .q{color:var(--gold-soft)}
+.myway p{color:rgba(250,247,241,.85);font-size:1.02rem;line-height:1.95;max-width:34em;margin:0 auto}
+
+/* ============ お客様の声 ============ */
+.voices{background:var(--cream)}
+.review-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:900px;margin-inline:auto}
+.review{background:#fff;border:1px solid var(--line-soft);border-radius:16px;padding:clamp(22px,3vw,30px);box-shadow:var(--shadow-soft)}
+.review .rh{display:flex;align-items:center;gap:.8em;margin-bottom:.7em}
+.review .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--sky),var(--cream-3));flex:none;display:grid;place-content:center;font-family:var(--serif);color:#fff;font-weight:700}
+.review .who{font-size:.84rem;color:var(--ink-soft)}
+.review .who b{display:block;color:var(--ink);font-size:.94rem}
+.review .stars{margin-left:auto;color:var(--gold);font-size:.95rem}
+.review .rt{font-family:var(--serif);font-weight:700;font-size:1.12rem;margin-bottom:.4em;color:var(--ink)}
+.review .rb{color:var(--ink-soft);font-size:.97rem;line-height:1.95}
+.voices .disc{text-align:center;margin-top:1.6em;font-size:.82rem;color:var(--ink-soft)}
+
+/* ============ 料金（松竹梅 維持）============ */
+.price-sec{background:var(--cream-2)}
+.price-sec .opt-note{text-align:center;color:var(--ink-soft);font-size:.98rem;margin:-.4em auto 1.6em;max-width:34em}
+.menu{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;max-width:980px;margin-inline:auto}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,32px);text-align:center;position:relative;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.card:hover{transition-duration:.2s;transform:translateY(-4px);box-shadow:var(--shadow-soft)}
+.card .name{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--ink)}
+.card .copy{color:var(--ink-soft);font-size:.95rem;margin:.5em 0 1em;line-height:1.8;min-height:2.4em}
+.card .val{font-family:var(--serif);font-weight:900;font-size:2.1rem;color:var(--ink);line-height:1}
+.card .val .yen{font-size:.46em;margin-right:.08em}
+.card .val .t{font-size:.5em;color:var(--ink-soft);font-weight:500;margin-left:.3em}
+.card .ppm{margin-top:.6em;font-size:.78rem;color:var(--ink-soft);opacity:.7}
+.card.hero-card{border:2px solid var(--gold);box-shadow:0 30px 64px -34px rgba(33,48,63,.5);transform:scale(1.04);z-index:2}
+.card.hero-card:hover{transform:scale(1.04) translateY(-4px)}
+.card.hero-card .val{color:var(--blue);font-size:2.5rem}
+.card.hero-card .copy{color:var(--ink);min-height:auto}
+.card .label{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:.8rem;font-weight:700;padding:.35em 1.1em;border-radius:99px;white-space:nowrap}
+.bridge2{text-align:center;font-family:var(--serif);font-size:clamp(1.05rem,2.4vw,1.3rem);line-height:1.9;color:var(--ink);margin:clamp(32px,4vw,52px) auto 0;max-width:34em}
+.bridge2 .q{color:var(--blue)}
+.keizoku{max-width:880px;margin:clamp(38px,5vw,60px) auto 0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.keizoku .kh{background:var(--ink);color:var(--cream);text-align:center;padding:1em;font-family:var(--serif);font-weight:700;font-size:1.2rem}
+.keizoku .kh small{display:block;font-size:.66em;font-weight:500;color:var(--gold-soft);margin-top:.2em}
+.ktable{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line)}
+.krow{background:#fff;display:grid;grid-template-columns:1fr;gap:.3em;padding:1.1em clamp(18px,3vw,28px);text-align:center}
+.krow.base{background:#FBF7EE}
+.krow .kt{font-family:var(--serif);font-weight:700;font-size:1.05rem}
+.krow .kt .tag{font-size:.62em;color:var(--gold);font-weight:700;margin-left:.4em}
+.krow .kp{font-family:var(--serif);font-weight:900;font-size:1.6rem;color:var(--blue)}
+.krow .kp .yen{font-size:.5em;margin-right:.06em}
+.krow .kd{font-size:.84rem;color:var(--ink-soft)}
+@media(min-width:640px){.krow{grid-template-columns:1.1fr 1fr 1.3fr;align-items:center;text-align:left}.krow .kp{text-align:center}.krow .kd{text-align:right}}
+.repeat-cta{max-width:620px;margin:clamp(38px,5vw,58px) auto 0;text-align:center;background:#fff;border:2px double var(--gold);border-radius:18px;padding:clamp(26px,4vw,38px);box-shadow:var(--shadow-soft)}
+.repeat-cta .k{font-family:var(--serif);color:var(--blue);font-weight:700;font-size:.95rem}
+.repeat-cta .big{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,4vw,2.1rem);color:var(--ink);margin:.25em 0 .1em}
+.repeat-cta .big .now{color:var(--blue)}
+.repeat-cta .was{color:var(--ink-soft);text-decoration:line-through;font-size:.9rem}
+.repeat-cta .actions{display:flex;gap:.7em;justify-content:center;flex-wrap:wrap;margin-top:1.2em}
+.repeat-cta .loss{margin-top:1em;font-size:.86rem;color:var(--ink-soft)}
+.repeat-cta .loss b{color:var(--gold);font-family:var(--serif)}
+
+/* ============ Q&A ============ */
+.faq{background:var(--cream)}
+.faq-list{max-width:780px;margin:0 auto;border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:flex-start;gap:1em;padding:1.3em 0;text-align:left;font-family:var(--serif);font-weight:700;font-size:1.1rem;line-height:1.6}
+.faq-q .pm{flex:none;width:24px;height:24px;position:relative;margin-top:.25em}
+.faq-q .pm::before,.faq-q .pm::after{content:"";position:absolute;background:var(--gold);transition:transform .35s var(--ease)}
+.faq-q .pm::before{top:11px;left:3px;width:18px;height:2px}
+.faq-q .pm::after{top:3px;left:11px;width:2px;height:18px}
+.faq-item.open .pm::after{transform:scaleY(0)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height .4s var(--ease)}
+.faq-a p{padding:0 0 1.4em;color:var(--ink-soft);font-size:.98rem;line-height:1.95}
+
+/* ============ クロージング（人に会う）============ */
+.closing{background:linear-gradient(160deg,var(--blue-deep),var(--ink));color:var(--cream);text-align:center}
+.closing .ph-mini{width:108px;height:108px;border-radius:50%;object-fit:cover;border:4px solid var(--gold-soft);margin:0 auto 1.2em;box-shadow:var(--shadow)}
+.closing h2{color:#fff;font-size:clamp(1.6rem,4.4vw,2.5rem);line-height:1.5;margin-bottom:.5em}
+.closing p{color:rgba(250,247,241,.86);max-width:32em;margin:0 auto 1.6em;line-height:2;font-size:1.05rem}
+.closing .sign{font-family:var(--serif);color:var(--gold-soft);font-weight:700;margin-bottom:1.6em}
+.closing .price{font-family:var(--serif);margin-bottom:1.2em}
+.closing .price .was{text-decoration:line-through;opacity:.7;font-size:1rem}
+.closing .price .now{font-weight:900;font-size:2.4rem;color:#fff}
+.closing .price .now .yen{font-size:.45em}
+.closing .actions{display:flex;gap:.8em;justify-content:center;flex-wrap:wrap}
+.closing .btn-tel{background:#fff;color:var(--blue)}
+.closing .loss{margin-top:1.3em;font-size:.86rem;color:var(--gold-soft)}
+
+/* ============ FOOTER ============ */
+.site-footer{background:var(--ink);color:rgba(250,247,241,.7);padding:clamp(46px,6vw,76px) 0 2.2em}
+.foot-grid{display:grid;grid-template-columns:1fr;gap:2em;margin-bottom:2.2em}
+.foot-brand .logo{font-family:var(--serif);font-weight:900;font-size:1.4rem;letter-spacing:.08em;color:#fff}
+.foot-brand p{margin-top:.9em;font-size:.92rem;line-height:1.9;max-width:26em}
+.foot-info li{display:flex;gap:.7em;font-size:.92rem;line-height:1.8}
+.foot-info .lab{color:var(--gold-soft);flex:none;font-family:var(--serif);font-weight:700}
+.foot-bottom{border-top:1px solid rgba(250,247,241,.12);padding-top:1.6em;display:flex;flex-wrap:wrap;gap:.8em;justify-content:space-between;font-size:.78rem}
+.foot-bottom .cr{color:rgba(250,247,241,.5)}
+.foot-bottom .cr b{color:var(--gold-soft);font-weight:500}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.flag{position:fixed;left:14px;bottom:14px;z-index:99;background:var(--gold);color:#fff;font-size:.74rem;font-weight:700;padding:.55em 1em;border-radius:99px;box-shadow:var(--shadow-soft)}
+
+/* ============ RESPONSIVE ============ */
+@media(min-width:820px){
+  .phero-grid{grid-template-columns:1.05fr .95fr}
+  .menu{grid-template-columns:1fr 1.12fr 1fr}
+  .foot-grid{grid-template-columns:1.5fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- 告知バー -->
+<div class="topbar">
+  はじめての方へ・初回お試し <b>60分 3,400円</b>　／　ご予約のお電話 <a href="tel:000-0000-0000" class="tel">000-0000-0000</a>
+</div>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="wrap header-in">
+    <div class="brand"><span class="logo">出張整体 しろのて<small>SHIRONOTE</small></span></div>
+    <div class="header-cta">
+      <div class="header-tel"><div class="lbl">受付 9:00〜18:00（日中）</div><a href="tel:000-0000-0000" class="num">000-0000-0000</a></div>
+      <a href="#closing" class="btn btn-line"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.7 2 10.26c0 4.08 3.55 7.5 8.34 8.15.32.07.77.21.88.49.1.25.07.64.03.9l-.14.85c-.04.25-.2.99.87.54s5.77-3.4 7.87-5.82C21.27 13.7 22 12.04 22 10.26 22 5.7 17.52 2 12 2Z"/></svg>LINEで予約</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ FV：人ヒーロー ============ -->
+<section class="phero">
+  <div class="phero-blob" aria-hidden="true"></div>
+  <div class="wrap phero-grid">
+    <div class="phero-copy">
+      <span class="eyebrow">宇美町・粕屋の出張整体 しろのて</span>
+      <h1>こんにちは、<br><span class="nm">白垣</span>です。</h1>
+      <p class="hello-sub">あなたの家まで、僕が伺います。</p>
+      <p class="lead">肩・腰・膝のお悩み、「もう何年も…」という方へ。通わなくて大丈夫です。<b>住み慣れたお部屋で、僕がていねいに整えます。</b>受けたあとは、そのままおやすみください。</p>
+      <div class="proof">
+        <div class="p"><b>9<span class="u">年</span></b><span>施術歴</span></div>
+        <div class="p"><b>90<span class="u">%↑</span></b><span>リピート率</span></div>
+        <div class="p"><b>約70<span class="u">%</span></b><span>紹介率</span></div>
+      </div>
+      <div class="cta-box">
+        <div class="head"><span class="ttl">はじめての方・お試し60分</span><span class="limit">初回半額</span></div>
+        <div class="price"><span class="was">通常6,800円</span><span class="now"><span class="yen">¥</span>3,400</span><span class="min">／60分</span></div>
+        <div class="cta-actions">
+          <a href="tel:000-0000-0000" class="btn btn-tel"><span class="lbl">お電話でご予約（受付 9〜18時）</span><span class="num">000-0000-0000</span></a>
+          <a href="#closing" class="btn btn-line"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.7 2 10.26c0 4.08 3.55 7.5 8.34 8.15.32.07.77.21.88.49.1.25.07.64.03.9l-.14.85c-.04.25-.2.99.87.54s5.77-3.4 7.87-5.82C21.27 13.7 22 12.04 22 10.26 22 5.7 17.52 2 12 2Z"/></svg>LINEで予約</a>
+        </div>
+      </div>
+    </div>
+    <div class="phero-media">
+      <div class="frame">
+        <img src="images/practitioner.png" alt="出張整体しろのて 施術者 白垣誠弥">
+        <span class="ph-note">写真は仮・本人写真に差し替え</span>
+      </div>
+      <div class="ribbon"><span class="k">Therapist</span><span class="t">白垣 誠弥</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ プロフィール＋信念 ============ -->
+<section class="section profile">
+  <div class="wrap inner">
+    <h2 class="reveal">はじめまして。<br>白垣 誠弥<span class="sm">（しらがき せいや）</span>です。</h2>
+    <p class="sig-name reveal">出張整体 しろのて ／ 施術歴9年</p>
+    <p class="reveal">整骨院で9年間、たくさんの体に向き合ってきました。けれど保険の枠ではどうしても届かないお悩みがあると感じて、独立しました。今は出張整体として、<span class="mk">あなたの家まで僕が伺っています。</span></p>
+    <p class="reveal">僕が何より大事にしているのは、"正直さ"です。無理な施術はしません。もし僕の手より病院が必要だと感じたら、はっきりお伝えして受診をおすすめします。それも、体のことが分かるからこそできることだと思っています。</p>
+    <p class="reveal">そして、伺うのはいつも<span class="mk">"僕ひとり"</span>。担当が変わることはありません。あなたの体のクセを覚えた同じ手で、ずっと寄り添います。</p>
+    <ul class="creed reveal">
+      <li class="ct">僕が、お約束すること</li>
+      <li><span class="ic">1</span>体の状態をていねいに見極めて、今日のあなたに合わせます</li>
+      <li><span class="ic">2</span>無理な施術はせず、必要なときは正直に受診をおすすめします</li>
+      <li><span class="ic">3</span>毎回"同じ僕"が伺います。担当は変わりません</li>
+    </ul>
+    <p class="ph-note reveal">※ 写真・プロフィール文は仮です。白垣さん本人の実写真・実際の言葉に差し替えます。</p>
+  </div>
+</section>
+
+<!-- ============ お悩み ============ -->
+<section class="section worries">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">こんなお悩みに</span>
+      <h2>その肩・腰・膝、<br>僕にまかせてください。</h2>
+    </div>
+    <div class="worry-grid">
+      <div class="worry reveal"><span class="ck">✓</span><p>もう何年も、肩・腰・膝が重い。だましだまし付き合ってきた。</p></div>
+      <div class="worry reveal d1"><span class="ck">✓</span><p>整体に通っても、数日でまた戻ってしまう。</p></div>
+      <div class="worry reveal d2"><span class="ck">✓</span><p>通うだけで疲れる。体が重い日ほど、出かけるのがしんどい。</p></div>
+      <div class="worry reveal d3"><span class="ck">✓</span><p>夜は出歩きたくない。日中に、落ち着いて受けたい。</p></div>
+    </div>
+    <div class="myway reveal">
+      <div class="mt">僕のやり方</div>
+      <h3>僕は、受けたあと<span class="q">「動かさない」</span>ことを大事にしています。</h3>
+      <p>店舗の整体だと、施術のあと立って歩いて帰るから、せっかく整えた体がその場で崩れがち。家でなら、整えたまま横になれます。だから戻りにくく、続けるほど軽くなっていきます。これは、僕が家まで伺うからできることです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ お客様の声（白垣さんへ）============ -->
+<section class="section voices">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">受けた方の声</span>
+      <h2>「白垣さんに、<br>お願いしてよかった。」</h2>
+    </div>
+    <div class="review-grid">
+      <div class="review reveal"><div class="rh"><span class="av">K</span><span class="who"><b>60代・女性</b>宇美町</span><span class="stars">★★★★★</span></div><div class="rt">人柄が、とにかく安心。</div><div class="rb">家に来てもらうのは不安でしたが、白垣さんは穏やかで誠実な方。今では来てくれるのが楽しみです。腰もずいぶん軽くなりました。</div></div>
+      <div class="review reveal d1"><div class="rh"><span class="av">T</span><span class="who"><b>50代・男性</b>粕屋町</span><span class="stars">★★★★★</span></div><div class="rt">正直に話してくれるから、信頼できる。</div><div class="rb">できること・できないことをはっきり言ってくれる。一度は「病院へ」とすすめてくれたこともあり、かえって信頼が増しました。</div></div>
+      <div class="review reveal d2"><div class="rh"><span class="av">M</span><span class="who"><b>60代・女性</b>志免町</span><span class="stars">★★★★★</span></div><div class="rt">同じ人が来てくれる安心。</div><div class="rb">毎回担当が変わらないので、こちらの体をよく分かってくれている。母にも紹介しました。来てもらえるから、続けられます。</div></div>
+    </div>
+    <p class="disc">※ お客様の声・評価はレイアウト確認用のサンプルです。実際の声に差し替えます。</p>
+  </div>
+</section>
+
+<!-- ============ 料金（松竹梅 維持）============ -->
+<section class="section price-sec" id="price">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">料金・メニュー</span>
+      <h2>お時間に合わせて、<br>選べます。</h2>
+    </div>
+    <p class="opt-note reveal">お忙しい方も、じっくり整えたい方も。60分・90分・120分からお選びいただけます。すべて税込・出張費込です。</p>
+    <div class="menu">
+      <div class="card reveal">
+        <div class="name">60<span class="sm">分</span></div>
+        <p class="copy">まず、試したい方へ。</p>
+        <div class="val"><span class="yen">¥</span>6,800<span class="t">／60分</span></div>
+        <div class="ppm">1分あたり 約113円</div>
+      </div>
+      <div class="card hero-card reveal d1">
+        <span class="label">いちばん選ばれています</span>
+        <div class="name">90<span class="sm">分</span></div>
+        <p class="copy">しっかり整えたい方に。肩・腰・膝、長年の不調を原因から見極めて、そのまま休めて定着させる、いちばん人気のコースです。</p>
+        <div class="val"><span class="yen">¥</span>9,000<span class="t">／90分</span></div>
+        <div class="ppm">1分あたり 100円</div>
+      </div>
+      <div class="card reveal d2">
+        <div class="name">120<span class="sm">分</span></div>
+        <p class="copy">とことん向き合う、特別な時間。</p>
+        <div class="val"><span class="yen">¥</span>15,000<span class="t">／120分</span></div>
+        <div class="ppm">1分あたり 125円</div>
+      </div>
+    </div>
+    <p class="bridge2 reveal">まずは60分で、お試しください。<br><span class="q">「もっと」</span>が必要な体には、90分でじっくり向き合います。</p>
+    <div class="keizoku reveal">
+      <div class="kh">続けるほど、軽くなる。月2回コース<small>単発よりお得に、定着を積み重ねる</small></div>
+      <div class="ktable">
+        <div class="krow"><div class="kt">60分 月2回</div><div class="kp"><span class="yen">¥</span>12,000</div><div class="kd">1回あたり 6,000円／約12%おトク</div></div>
+        <div class="krow base"><div class="kt">90分 月2回<span class="tag">いちばん人気</span></div><div class="kp"><span class="yen">¥</span>16,000</div><div class="kd">1回あたり 8,000円／約11%おトク</div></div>
+        <div class="krow"><div class="kt">120分 月2回</div><div class="kp"><span class="yen">¥</span>27,000</div><div class="kd">1回あたり 13,500円／約10%おトク</div></div>
+      </div>
+    </div>
+    <div class="repeat-cta reveal">
+      <div class="k">はじめての方へ</div>
+      <div class="big">初回お試し60分　<span class="was">6,800円</span> → <span class="now">3,400円</span></div>
+      <div class="actions">
+        <a href="tel:000-0000-0000" class="btn btn-tel"><span class="lbl">お電話でご予約（受付 9〜18時）</span><span class="num">000-0000-0000</span></a>
+        <a href="#closing" class="btn btn-line"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.7 2 10.26c0 4.08 3.55 7.5 8.34 8.15.32.07.77.21.88.49.1.25.07.64.03.9l-.14.85c-.04.25-.2.99.87.54s5.77-3.4 7.87-5.82C21.27 13.7 22 12.04 22 10.26 22 5.7 17.52 2 12 2Z"/></svg>LINEで予約</a>
+      </div>
+      <p class="loss"><b>この半額は、はじめての方限定</b>です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Q&A ============ -->
+<section class="section faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">よくあるご質問</span>
+      <h2>はじめての方へ。</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">何を準備すればいいですか？<span class="pm"></span></button><div class="faq-a"><p>畳一畳ほどの広さがあれば大丈夫です。ベッド・タオル・道具一式はすべて僕がお持ちします。ゆったりした服装のままで受けていただけます。</p></div></div>
+      <div class="faq-item"><button class="faq-q">当日や前日でも予約できますか？<span class="pm"></span></button><div class="faq-a"><p>空きがあれば承ります。まずはお電話かLINEでご希望の日時をお知らせください。できるかぎり調整します。</p></div></div>
+      <div class="faq-item"><button class="faq-q">夜はやっていないのですか？<span class="pm"></span></button><div class="faq-a"><p>はい、夜間のご予約は基本お受けしていません。僕のコンディションが最も整う日中に、ひとりひとりとていねいに向き合いたいからです。日中のほうが落ち着いて受けられる、という声も多くいただきます。</p></div></div>
+      <div class="faq-item"><button class="faq-q">家族（親）のために頼めますか？<span class="pm"></span></button><div class="faq-a"><p>もちろんです。ご家族からのご予約も歓迎しています。離れて暮らすご両親のために手配される方も多くいらっしゃいます。当日は僕が直接お伺いし、ていねいにご説明します。</p></div></div>
+      <div class="faq-item"><button class="faq-q">出張の範囲は？支払いは？<span class="pm"></span></button><div class="faq-a"><p>宇美町を中心に、糟屋郡〜福岡市東区へ伺います（エリア外もご相談ください）。お支払いは現金のほか各種QRコード決済に対応予定です。（※対応内容は確認中）</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ クロージング（人に会う）============ -->
+<section class="section closing" id="closing">
+  <div class="wrap">
+    <img src="images/practitioner.png" alt="白垣誠弥" class="ph-mini reveal">
+    <h2 class="reveal">まずは一度、<br>僕に会ってみてください。</h2>
+    <p class="reveal">長年のお悩みを、その場しのぎで終わらせたくありません。住み慣れたお部屋で受けて、そのままおやすみください。合うかどうかは、一度会って、受けてみて決めていただければ大丈夫です。</p>
+    <p class="sign reveal">出張整体 しろのて ／ 白垣 誠弥</p>
+    <div class="price reveal"><span class="was">通常6,800円</span> → <span class="now"><span class="yen">¥</span>3,400</span> ／ 初回お試し60分</div>
+    <div class="actions reveal">
+      <a href="tel:000-0000-0000" class="btn btn-tel"><span class="lbl">お電話でご予約（受付 9〜18時）</span><span class="num">000-0000-0000</span></a>
+      <a href="#" class="btn btn-line"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.7 2 10.26c0 4.08 3.55 7.5 8.34 8.15.32.07.77.21.88.49.1.25.07.64.03.9l-.14.85c-.04.25-.2.99.87.54s5.77-3.4 7.87-5.82C21.27 13.7 22 12.04 22 10.26 22 5.7 17.52 2 12 2Z"/></svg>LINEで予約</a>
+    </div>
+    <p class="loss reveal">※ この半額は、はじめての方限定です。</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="logo">出張整体 しろのて</span>
+        <p>宇美町・粕屋エリアの自宅出張整体。施術者・白垣誠弥が、あなたの家まで伺います。整えた体を動かさず、そのまま定着させる。長年の肩・腰・膝のお悩みに寄り添います。</p>
+      </div>
+      <div class="foot-col">
+        <ul class="foot-info">
+          <li><span class="lab">施術者</span><span>白垣 誠弥（施術歴9年）</span></li>
+          <li><span class="lab">エリア</span><span>宇美町〜糟屋郡〜福岡市東区（出張）</span></li>
+          <li><span class="lab">受付</span><span>9:00〜18:00（日中）</span></li>
+          <li><span class="lab">電話</span><span>000-0000-0000　※仮</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 出張整体 しろのて</span>
+      <span class="cr">Sample design — Produced by <b>FUKUOKA CONNECT</b></span>
+    </div>
+  </div>
+</footer>
+
+<div class="flag">Aモック：人ベース（写真・言葉は仮）</div>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+  q.addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+    if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+</script>
+</body>
+</html>
