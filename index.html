@@ -66,7 +66,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.5;letter-spac
 .topbar .tel{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.45)}
 .site-header{position:sticky;top:0;z-index:40;background:rgba(250,247,241,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
 .header-in{display:flex;align-items:center;justify-content:space-between;padding-block:.85rem;gap:1em}
-.brand .logo{font-family:var(--serif);font-weight:900;font-size:1.4rem;letter-spacing:.08em;color:var(--ink)}
+.brand .logo{font-family:var(--serif);font-weight:900;font-size:1.2rem;letter-spacing:.04em;color:var(--ink);white-space:nowrap}
 .brand .logo small{display:block;font-size:.5em;letter-spacing:.3em;color:var(--blue);font-weight:700;margin-top:.2em}
 .header-cta{display:flex;align-items:center;gap:.8em}
 .header-tel{text-align:right;line-height:1.2}
@@ -74,6 +74,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.5;letter-spac
 .header-tel .num{font-family:var(--serif);font-size:1.35rem;font-weight:900;color:var(--blue)}
 .header-cta .btn-line{padding:.7em 1.25em;font-size:.92rem}
 @media(max-width:720px){.header-tel{display:none}}
+@media(min-width:560px){.brand .logo{font-size:1.4rem;letter-spacing:.08em}}
 
 /* ============ FV：人ヒーロー（写真ドーン）============ */
 .phero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--cream),var(--cream-2))}
